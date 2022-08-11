@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Photo Gallery task</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  .img-dimensions{
+	  width:200px;
+	  }
+  </style>
+</head>
+<body style="background-color: #8DBAFA;">
+<div class="container">
+<div class="py-5">
+<h1 class="text-center display-3" style="color: #ffff;">MY GALLERY</h1>
+<hr class="text-center w-25">
+</div>
+<div class="row row-no-gutters galleries">
+<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+<a href="plugins/plugin-images/user1.gif">
+<img src="plugins/plugin-images/user1.gif" alt="" class="img-fluid img-dimensions">
+</a>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+<a href="plugins/plugin-images/user2.gif">
+<img src="plugins/plugin-images/user2.gif" alt="" class="img-fluid img-dimensions">
+</a>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+<a href="plugins/plugin-images/user3.gif">
+<img src="plugins/plugin-images/user3.gif" alt="" class="img-fluid img-dimensions">
+</a>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+<a href="plugins/plugin-images/user4.gif">
+<img src="plugins/plugin-images/user4.gif" alt="" class="img-fluid img-dimensions">
+</a>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+<a href="plugins/plugin-images/user5.gif">
+<img src="plugins/plugin-images/user5.gif" alt="" class="img-fluid img-dimensions">
+</a>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+<a href="plugins/plugin-images/user6.gif">
+<img src="plugins/plugin-images/user6.gif" alt="" class="img-fluid img-dimensions">
+</a>
+</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$(document).ready(function(){
+    $(".galleries").magnificPopup({
+		type:"image",
+		delegate:"a",
+		gallery:{
+			enabled:true
+			}
+		});
+});
+</script>
+
+</body>
+</html> 
